@@ -87,3 +87,6 @@ ___
 I really love to study. Last year I'm ending courses "HTML and CSS Basics" and "Web development for beginners"
 with a top rate. Now, I am studying on the Rolling Scope School and planning to finish it on top rating.
 ___
+## Languages
+1. Russian - native
+2. English - B1+ (as I think). When I wrote text for this site, I am using translator just five or seven times.
