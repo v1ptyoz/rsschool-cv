@@ -55,7 +55,6 @@ It is a small library for tabs on your site. Let's look to my code:
     }
     ```
 * Then we are hide all content in all tabs and showing only first tab via function *hideTabContent*.
-  As you see, you need two more classes. In the
   ```javascript
     function hideTabContent(a) {
         for (let i = a; i < tabContent.length; i++) {
