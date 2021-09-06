@@ -31,3 +31,55 @@ And of course, I know some graphic editors, like Photoshop and Corel Draw,
 and instruments for layout and design, like Figma and Sketch.
 Also, In my work I'm using GIT and Visual Studio Code editor and PHPStorm IDE.
 ___
+## My projects
+###### All of my projects can be found [on my GitHub](https://github.com/v1ptyoz/). Here is one of them.
+[Tabs on JS](https://github.com/v1ptyoz/JSTabs).
+
+It is a small library for tabs on your site. Let's look to my code:
+* First, the *info* variable is a wrapper for all tabs. As you see, *tab* and *tabcontent* are collections for a
+  tab, where we're clicking and content, which will be showing after click. So, you need elements with classes: *info-header-tab*,
+  *info-header* and *info-tabcontent*. Or you can use your own classes, just renamed it in the code.
+    ```javascript
+    let tab = document.querySelectorAll(".info-header-tab"), 
+        info = document.querySelector(".info-header"),
+        tabContent = document.querySelectorAll(".info-tabcontent");
+    ```
+* Before next step, you need CSS-classes with name *show* and *hide*.
+  In my project this classes has code:
+  ```css
+    .hide {
+       display: none;
+    }
+    .show {
+       display: block;
+    }
+    ```
+* Then we are hide all content in all tabs and showing only first tab via function *hideTabContent*.
+  As you see, you need two more classes. In the
+  ```javascript
+    function hideTabContent(a) {
+        for (let i = a; i < tabContent.length; i++) {
+        tabContent[i].classList.remove("show");
+        tabContent[i].classList.add("hide");
+        }
+    }
+    hideTabContent(1);
+  ```
+* The function *showTabContent* just toggle *show* class. I won't describe it here.
+* Finally, using event delegation, I am create a click handler.
+  ```javascript
+  info.addEventListener("click", function(event) {
+  let target = event.target;
+  if (target && target.classList.contains("info-header-tab")) {
+      for(let i = 0; i < tab.length; i++) {
+          if (target == tab[i]) {
+              hideTabContent(0);
+              showTabContent(i);
+              break;
+              }
+          }
+      }
+  });
+    ```
+More project [on my GitHub](https://github.com/v1ptyoz/)
+___
