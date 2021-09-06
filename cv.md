@@ -83,3 +83,7 @@ It is a small library for tabs on your site. Let's look to my code:
     ```
 More project [on my GitHub](https://github.com/v1ptyoz/)
 ___
+## Courses
+I really love to study. Last year I'm ending courses "HTML and CSS Basics" and "Web development for beginners"
+with a top rate. Now, I am studying on the Rolling Scope School and planning to finish it on top rating.
+___
