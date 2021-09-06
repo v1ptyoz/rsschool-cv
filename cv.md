@@ -6,6 +6,7 @@ ___
 **Contacts:**
 1. E-mail: [v1ptyoz@gmail.com](mailto:v1ptyoz@gmail.com)
 2. Telegram: [@khrabrovav](https://t.me/khrabrovav)
+
 ___
 
 ## About me
@@ -14,6 +15,7 @@ Programming has a most important place in my life. I like to automate everything
 Also, I like to write a programming code. So, I'm learning some programming languages for five years.
 But, only with a Javascript I decided to change my life and become a programmer.
 Next, I'll tell you about my skills and projects.
+
 ___
 
 ## Skills
@@ -34,6 +36,7 @@ But I don’t like jQuery. Why we are using it, if there is we can write more ex
 And of course, I know some graphic editors, like Photoshop and Corel Draw,
 and instruments for layout and design, like Figma and Sketch.
 Also, In my work I'm using GIT and Visual Studio Code editor and PHPStorm IDE.
+
 ___
 
 ## My projects
@@ -86,11 +89,13 @@ It is a small library for tabs on your site. Let's look to my code:
   });
   ```
 More project [on my GitHub](https://github.com/v1ptyoz)
+
 ___
 
 ## Courses
 I really love to study. Last year I'm ending courses "HTML and CSS Basics" and "Web development for beginners"
 with a top rate. Now, I am studying on the Rolling Scope School and planning to finish it on top rating.
+
 ___
 
 ## Languages
