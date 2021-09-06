@@ -5,6 +5,7 @@ ___
 1. E-mail: [v1ptyoz@gmail.com](mailto:v1ptyoz@gmail.com)
 2. Telegram: [@khrabrovav](https://t.me/khrabrovav)
 ___
+
 ## About me
 Hello everyone! As your understood - my name is Aleksandr, and I'm a junior JS-developer.
 Programming has a most important place in my life. I like to automate everything in my work.
@@ -12,6 +13,7 @@ Also, I like to write a programming code. So, I'm learning some programming lang
 But, only with a Javascript I decided to change my life and become a programmer.
 Next, I'll tell you about my skills and projects.
 ___
+
 ## Skills
 Now, my skills in **HTML**, **CSS** are very well.
 I know about semantic in **HTML**, and trying to use special semantic tags in my work.
@@ -31,6 +33,7 @@ And of course, I know some graphic editors, like Photoshop and Corel Draw,
 and instruments for layout and design, like Figma and Sketch.
 Also, In my work I'm using GIT and Visual Studio Code editor and PHPStorm IDE.
 ___
+
 ## My projects
 ###### All of my projects can be found [on my GitHub](https://github.com/v1ptyoz/). Here is one of them.
 [Tabs on JS](https://github.com/v1ptyoz/JSTabs).
@@ -82,10 +85,12 @@ It is a small library for tabs on your site. Let's look to my code:
   ```
 More project [on my GitHub](https://github.com/v1ptyoz)
 ___
+
 ## Courses
 I really love to study. Last year I'm ending courses "HTML and CSS Basics" and "Web development for beginners"
 with a top rate. Now, I am studying on the Rolling Scope School and planning to finish it on top rating.
 ___
+
 ## Languages
 1. Russian - native
 2. English - B1+ (as I think). When I wrote text for this site, I am using translator just five or seven times.
