@@ -39,11 +39,11 @@ It is a small library for tabs on your site. Let's look to my code:
 * First, the *info* variable is a wrapper for all tabs. As you see, *tab* and *tabcontent* are collections for a
   tab, where we're clicking and content, which will be showing after click. So, you need elements with classes: *info-header-tab*,
   *info-header* and *info-tabcontent*. Or you can use your own classes, just renamed it in the code.
-    ```javascript
+  ```javascript
     let tab = document.querySelectorAll(".info-header-tab"), 
         info = document.querySelector(".info-header"),
         tabContent = document.querySelectorAll(".info-tabcontent");
-    ```
+  ```
 * Before next step, you need CSS-classes with name *show* and *hide*.
   In my project this classes has code:
   ```css
@@ -53,7 +53,7 @@ It is a small library for tabs on your site. Let's look to my code:
     .show {
        display: block;
     }
-    ```
+  ```
 * Then we are hide all content in all tabs and showing only first tab via function *hideTabContent*.
   ```javascript
     function hideTabContent(a) {
@@ -79,8 +79,8 @@ It is a small library for tabs on your site. Let's look to my code:
           }
       }
   });
-    ```
-More project [on my GitHub](https://github.com/v1ptyoz/)
+  ```
+More project [on my GitHub](https://github.com/v1ptyoz)
 ___
 ## Courses
 I really love to study. Last year I'm ending courses "HTML and CSS Basics" and "Web development for beginners"
