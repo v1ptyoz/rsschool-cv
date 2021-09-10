@@ -47,142 +47,142 @@
                 <h2 class="section__title">Skills</h2>
                 <div class="section__content">
                     <p>
-                    Now, my skills in **HTML**, **CSS** are very well.
-                    I know about semantic in **HTML**, and trying to use special semantic tags in my work.
-                    In **CSS** I know about boxing model, positioning, vendor-prefixes for different browsers and so on
-                    and so forth.
-                    Also, I know about instruments, which help us to write less code, or do our coding process more
-                    nice.
-                    I talk about HTML template engines like **PUG**, about CSS preprocessors, like **SASS** and **LESS**
-                    and more other instruments,
-                    like **gulp** and **webpack**, with its rich plugins' library.
-                </p>
-                <p>
-                    In native Javascript I know all about variables, functions, classes, hoisting and built-in methods
-                    for any variables.
-                    Of course, it is too many methods and no way to remember all of it.
-                    But with a practice all of it is automatically remember.
-                    Also, I know about Document Object Model and browser events.
-                    Of course, I know about some libraries like JQuery.
-                    But I don’t like jQuery. Why we are using it, if there is we can write more expressively code with
-                    ES6?
-                </p>
-                <p>
-                    And of course, I know some graphic editors, like Photoshop and Corel Draw,
-                    and instruments for layout and design, like Figma and Sketch.
-                    Also, In my work I'm using GIT and Visual Studio Code editor and PHPStorm IDE.
-                </p>
-            </div>
-        </section>
-        <section class="section projects">
-            <h2 class="section__title">My projects</h2>
-            <p class="section__caption">All of my projects can be found <a href="https://github.com/v1ptyoz/">on my
-                GitHub</a> Here is one of them.</p>
-            <div class="section__content">
-                <a href="https://github.com/v1ptyoz/JSTabs"><h3 class="section__subtitle">Tabs on JS</h3></a>
-                <p>It is a small library for tabs on your site. Let's look to my code:</p>
-                <ul class="projects__list">
-                    <li class="projects__item">
-                        <p>First, the info variable is a wrapper for all tabs. As you see, tab and tabcontent are
-                            collections for a tab, where we're clicking and content, which will be showing after click.
-                            So, you need elements with classes: info-header-tab, info-header and info-tabcontent. Or you
-                            can use your own classes, just renamed it in the code.</p>
-                        <code class="js">
-                            <span class="js__keyword">let</span> tab = document.querySelectorAll("<span
-                                class="js__argument">.info-header-tab</span>"),<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;info = document.querySelector("<span class="js__argument">.info-header</span>"),<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;tabContent = document.querySelectorAll("<span class="js__argument">.info-tabcontent</span>");
-                        </code>
-                    </li>
-                    <li class="project__item">
-                        <p>
-                            Before next step, you need CSS-classes with name *show* and *hide*.
-                            In my project this classes has code:
-                        </p>
-                        <code class="css">
-                            <span class="css__keyword">.hide</span> {<br>
-                            <span class="css__keyword">&nbsp;&nbsp;&nbsp;&nbsp;display</span>: none;<br>
-                            }<br>
-                            <span class="css__keyword">.show</span> {<br>
-                            <span class="css__keyword">&nbsp;&nbsp;&nbsp;&nbsp;display</span>: block;<br>
-                            }
-                        </code>
-                    </li>
-                    <li class="project__item">
-                        <p>
-                            Then we are hide all content in all tabs and showing only first tab via function
-                            hideTabContent.
-                        </p>
-                        <code class="js">
-                            <span class="js__keyword">function</span> hideTabContent(a) {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="js__keyword">for</span> (<span
-                                class="js__keyword">let</span> i <span class="js__operation">=</span> a; i <span
-                                class="js__operation">&lt;</span> tabContent.length; i<span class="js__operation">++</span>)
-                            {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabContent[i].classList.remove("<span
-                                class="js__argument">show</span>");<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabContent[i].classList.add("<span
-                                class="js__argument">hide</span>");<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            }<br>
-                            hideTabContent(<span class="js__argument">1</span>);
-                        </code>
-                    </li>
-                    <li class="project__item">
-                        <p>
-                            The function showTabContent just toggle show class. I won't describe it here.
-                        </p>
-                    </li>
-                    <li class="project__item">
-                        <p>Finally, using event delegation, I am create a click handler.</p>
-                        <code class="js">
-                            info.addEventListener(<span class="js__argument">"click"</span>, <span class="js__keyword">function</span>(event)
-                            {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="js__keyword">let</span> target <span
-                                class="js__operation">=</span> event.target;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="js__keyword">if</span> (target <span
-                                class="js__operation">&&</span> target.classList.contains("<span class="js__argument">info-header-tab</span>"))
-                            {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__keyword">for</span>(<span
-                                class="js__keyword">let</span> i <span class="js__operation">=</span> 0; i <span
-                                class="js__operation">&lt;</span> tab.length; i<span class="js__operation">++</span>) {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                class="js__keyword">if</span> (target <span class="js__operation">==</span> tab[i])
-                            {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hideTabContent(0);<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;showTabContent(i);<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                class="js__keyword">break</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            });
-                        </code>
-                    </li>
-
-                </ul>
-                <p>More project <a href="https://github.com/v1ptyoz/">on my GitHub</a></p>
-            </div>
-        </section>
-        <section class="section">
-            <h2 class="section__title">Courses</h2>
-            <div class="section__content">
-                <p>
-                    I really love to study. Last year I'm ending courses "HTML and CSS Basics" and "Web development for
-                    beginners" with a top rate. Now, I am studying on the Rolling Scope School and planning to finish it
-                    on top rating.
-                </p>
-            </div>
-        </section>
-        <section class="section">
-            <h2 class="section__title languages">Languages</h2>
-            <div class="section__content">
-                <ol class="languages__list o-list">
-                    <li class="o-list__item">Russian - native</li>
-                    <li class="o-list__item">English - B1+ (as I think). When I wrote text for this site, I am using translator just five or seven times.</li>
-                </ol>
-            </div>
-        </section>
+                        Now, my skills in <b>HTML</b>, <b>CSS</b> are very well.
+                        I know about semantic in <b>HTML</b>, and trying to use special semantic tags in my work.
+                        In <b>CSS</b> I know about boxing model, positioning, vendor-prefixes for different browsers and so on
+                        and so forth.
+                        Also, I know about instruments, which help us to write less code, or do our coding process more
+                        nice.
+                        I talk about HTML template engines like <b>PUG</b>, about CSS preprocessors, like <b>SASS</b> and <b>LESS</b>
+                        and more other instruments,
+                        like <b>gulp</b>> and <b>webpack</b>, with its rich plugins' library.
+                    </p>
+                    <p>
+                        In native Javascript I know all about variables, functions, classes, hoisting and built-in methods
+                        for any variables.
+                        Of course, it is too many methods and no way to remember all of it.
+                        But with a practice all of it is automatically remember.
+                        Also, I know about Document Object Model and browser events.
+                        Of course, I know about some libraries like JQuery.
+                        But I don’t like jQuery. Why we are using it, if there is we can write more expressively code with
+                        ES6?
+                    </p>
+                    <p>
+                        And of course, I know some graphic editors, like Photoshop and Corel Draw,
+                        and instruments for layout and design, like Figma and Sketch.
+                        Also, In my work I'm using GIT and Visual Studio Code editor and PHPStorm IDE.
+                    </p>
+                </div>
+            </section>
+            <section class="section projects">
+                <h2 class="section__title">My projects</h2>
+                <p class="section__caption">All of my projects can be found <a href="https://github.com/v1ptyoz/">on my
+                    GitHub</a> Here is one of them.</p>
+                <div class="section__content">
+                    <a href="https://github.com/v1ptyoz/JSTabs"><h3 class="section__subtitle">Tabs on JS</h3></a>
+                    <p>It is a small library for tabs on your site. Let's look to my code:</p>
+                    <ul class="projects__list">
+                        <li class="projects__item">
+                            <p>First, the <i>info</i> variable is a wrapper for all tabs. As you see, <i>tab</i> and <i>tabcontent</i> are
+                                collections for a tab, where we're clicking and content, which will be showing after click.
+                                So, you need elements with classes: <i>info-header-tab</i>, <i>info-header</i> and <i>info-tabcontent</i>. Or you
+                                can use your own classes, just renamed it in the code.</p>
+                            <code class="js">
+                                <span class="js__keyword">let</span> tab <span class="js__operation">=</span> document.querySelectorAll("<span
+                                    class="js__argument">.info-header-tab</span>"),<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;info <span class="js__operation">=</span> document.querySelector("<span class="js__argument">.info-header</span>"),<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;tabContent <span class="js__operation">=</span> document.querySelectorAll("<span class="js__argument">.info-tabcontent</span>");
+                            </code>
+                        </li>
+                        <li class="projects__item">
+                            <p>
+                                Before next step, you need CSS-classes with name <i>show</i> and <i>hide</i>.
+                                In my project this classes has code:
+                            </p>
+                            <code class="css">
+                                <span class="css__keyword">.hide</span> {<br>
+                                <span class="css__keyword">&nbsp;&nbsp;&nbsp;&nbsp;display</span>: none;<br>
+                                }<br>
+                                <span class="css__keyword">.show</span> {<br>
+                                <span class="css__keyword">&nbsp;&nbsp;&nbsp;&nbsp;display</span>: block;<br>
+                                }
+                            </code>
+                        </li>
+                        <li class="projects__item">
+                            <p>
+                                Then we are hide all content in all tabs and showing only first tab via function
+                                <i>hideTabContent</i>.
+                            </p>
+                            <code class="js">
+                                <span class="js__keyword">function</span> hideTabContent(a) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="js__keyword">for</span> (<span
+                                    class="js__keyword">let</span> i <span class="js__operation">=</span> a; i <span
+                                    class="js__operation">&lt;</span> tabContent.length; i<span class="js__operation">++</span>)
+                                {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabContent[i].classList.remove("<span
+                                    class="js__argument">show</span>");<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tabContent[i].classList.add("<span
+                                    class="js__argument">hide</span>");<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                }<br>
+                                hideTabContent(<span class="js__argument">1</span>);
+                            </code>
+                        </li>
+                        <li class="projects__item">
+                            <p>
+                                The function <i>showTabContent</i> just toggle show class. I won't describe it here.
+                            </p>
+                        </li>
+                        <li class="projects__item">
+                            <p>Finally, using event delegation, I am create a click handler.</p>
+                            <code class="js">
+                                info.addEventListener(<span class="js__argument">"click"</span>, <span class="js__keyword">function</span>(event)
+                                {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="js__keyword">let</span> target <span
+                                    class="js__operation">=</span> event.target;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="js__keyword">if</span> (target <span
+                                    class="js__operation">&&</span> target.classList.contains("<span class="js__argument">info-header-tab</span>"))
+                                {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__keyword">for</span>(<span
+                                    class="js__keyword">let</span> i <span class="js__operation">=</span> 0; i <span
+                                    class="js__operation">&lt;</span> tab.length; i<span class="js__operation">++</span>) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    class="js__keyword">if</span> (target <span class="js__operation">==</span> tab[i])
+                                {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hideTabContent(0);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;showTabContent(i);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    class="js__keyword">break</span>;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                });
+                            </code>
+                        </li>
+                    </ul>
+                    <p>More project <a href="https://github.com/v1ptyoz/">on my GitHub</a></p>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Courses</h2>
+                <div class="section__content">
+                    <p>
+                        I really love to study. Last year I'm ending courses "HTML and CSS Basics" and "Web development for
+                        beginners" with a top rate. Now, I am studying on the Rolling Scope School and planning to finish it
+                        on top rating.
+                    </p>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__title languages">Languages</h2>
+                <div class="section__content">
+                    <ol class="languages__list o-list">
+                        <li class="o-list__item">Russian - native</li>
+                        <li class="o-list__item">English - B1+ (as I think). When I wrote text for this site, I am using translator just five or seven times.</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">
