@@ -9,41 +9,44 @@
 <body>
 <div class="wrapper">
     <header class="header">
-        <div class="header__hero hero">
-            <div class="hero__text">
-                <h1 class="hero__title">Aleksandr Khrabrov</h1>
-                <p class="hero__subtitle">Junior JS-developer</p>
+        <div class="container">
+            <div class="header__hero hero">
+                <div class="hero__text">
+                    <h1 class="hero__title">Aleksandr Khrabrov</h1>
+                    <p class="hero__subtitle">Junior JS-developer</p>
+                </div>
+                <div class="hero__photo">
+                    <img src="img/photo.png" alt="Aleksandr's photo" width="200" height="200">
+                </div>
             </div>
-            <div class="hero__photo">
-                <img src="img/photo.png" alt="Aleksandr's photo" width="200" height="200">
-            </div>
+            <nav class="header__nav nav">
+                <h4 class="nav__title">Contacts:</h4>
+                <ol class="nav__list o-list">
+                    <li class="o-list__item">E-mail: <a href="mailto:v1ptyoz@gmail.com">v1ptyoz@gmail.com</a></li>
+                    <li class="o-list__item">Telegram: <a href="https://t.me/khrabrovav">@khrabrovav</a></li>
+                </ol>
+            </nav>
         </div>
-        <nav class="header__nav nav">
-            <h4 class="nav__title">Contacts:</h4>
-            <ol class="nav__list o-list">
-                <li class="o-list__item">E-mail: <a href="mailto:v1ptyoz@gmail.com">v1ptyoz@gmail.com</a></li>
-                <li class="o-list__item">Telegram: <a href="https://t.me/khrabrovav">@khrabrovav</a></li>
-            </ol>
-        </nav>
     </header>
     <main class="main">
-        <section class="section">
-            <h2 class="section__title">About me</h2>
-            <div class="section__content">
-                <p>
-                    Hello everyone! As your understood - my name is Aleksandr, and I'm a junior JS-developer.
-                    Programming has a most important place in my life. I like to automate everything in my work.
-                    Also, I like to write a programming code. So, I'm learning some programming languages for five
-                    years.
-                    But, only with a Javascript I decided to change my life and become a programmer.
-                    Next, I'll tell you about my skills and projects.
-                </p>
-            </div>
-        </section>
-        <section class="section">
-            <h2 class="section__title">Skills</h2>
-            <div class="section__content">
-                <p>
+        <div class="container">
+            <section class="section">
+                <h2 class="section__title">About me</h2>
+                <div class="section__content">
+                    <p>
+                        Hello everyone! As your understood - my name is Aleksandr, and I'm a junior JS-developer.
+                        Programming has a most important place in my life. I like to automate everything in my work.
+                        Also, I like to write a programming code. So, I'm learning some programming languages for five
+                        years.
+                        But, only with a Javascript I decided to change my life and become a programmer.
+                        Next, I'll tell you about my skills and projects.
+                    </p>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Skills</h2>
+                <div class="section__content">
+                    <p>
                     Now, my skills in **HTML**, **CSS** are very well.
                     I know about semantic in **HTML**, and trying to use special semantic tags in my work.
                     In **CSS** I know about boxing model, positioning, vendor-prefixes for different browsers and so on
@@ -182,11 +185,13 @@
         </section>
     </main>
     <footer class="footer">
-        <small class="footer__copyright"><a href="https://github.com/v1ptyoz/">GitHub</a>, 2021</small>
-        <div class="footer__img">
-            <a href="https://rs.school/js/">
-                <img src="https://rs.school/images/rs_school_js.svg" alt="RSS JS Course Logo" width="100">
-            </a>
+        <div class="container">
+            <small class="footer__copyright"><a href="https://github.com/v1ptyoz/">GitHub</a>, 2021</small>
+            <div class="footer__img">
+                <a href="https://rs.school/js/">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="RSS JS Course Logo" width="100">
+                </a>
+            </div>
         </div>
     </footer>
 </div>
